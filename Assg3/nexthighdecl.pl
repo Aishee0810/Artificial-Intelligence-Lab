@@ -1,0 +1,20 @@
+next_high(L,L1):-
+	high_perm(L,L1),
+	not(far_high(L1,L)).
+high_perm(L,L1):-
+	perm(L,L1),
+	high(L1,L).
+high([H1|T1],[H|T]):-
+	H1>H.
+high([H|T1],[H|T]):-
+	high(T1,T).
+far_high(L1,L):-
+	high_perm(L,L2),
+	high(L1,L2).
+perm([],[]).
+perm(L,[H|T]):-
+	select(H,L,R),
+	perm(R,T).
+select(X,[X|L],L).
+select(X,[H|T],[H|T1]):-
+	select(X,T,T1).

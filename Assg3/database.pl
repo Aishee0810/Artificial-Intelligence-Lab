@@ -1,0 +1,9 @@
+match('a',['cat','mat','rat','sat']).
+match('b',['hurry','curry','furry','slurry']).
+match('c',['low','show','tow','mellow']).
+match('d',['tone','phone','shone','barritone']).
+match('e',['anun','kanun','manun','charun']).
+match('f',['kura','tama','era','baka']).
+match('g',['kuru','su','xanadu','shipu']).
+match('h',['te','shime','bine','hajime']).
+match('i',['arigato','domo','momo','yo']).

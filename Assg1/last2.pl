@@ -1,0 +1,1 @@
+last2(X,L):-append(_,[X],L).
